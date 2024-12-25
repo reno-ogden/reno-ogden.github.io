@@ -1,29 +1,87 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<html lang=”en”>
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
 
-  <head>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-    <meta charset=”UTF-8″>
+        nav ul li {
+            margin: 0 15px;
+        }
 
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
 
-    <title>My Website [Name of the website]</title>
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Website</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  </head>
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to My Personal Website</h1>
+            <p>This is a simple HTML file with a navigation bar at the top.</p>
+        </section>
 
-  <body>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write something about yourself here.</p>
+        </section>
 
-    <main>
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <p>Showcase your projects here.</p>
+        </section>
 
-        <h1>Welcome to My Website [Name of the website]</h1>  
-
-        <p>This is my new website hosted on GitHub Pages!</p>
-
-    </main>
-
-  </body>
-
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Provide your contact details here.</p>
+        </section>
+    </div>
+</body>
 </html>
