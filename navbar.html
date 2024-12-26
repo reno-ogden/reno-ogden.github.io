@@ -7,3 +7,70 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents padding and borders from affecting layout */
+}
+
+/* Style for the navbar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Distributes logo and menu items evenly */
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding to fit your design */
+    background-color: #333; /* Background color for navbar */
+    color: white;
+    width: 100%;
+    max-width: 100vw; /* Ensures it doesn't extend past the screen */
+}
+
+/* Logo styling */
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style for the navigation menu */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px; /* Space between menu items */
+}
+
+/* Style for each menu item */
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0; /* Light color on hover */
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%; /* Ensure each item spans the full width */
+        text-align: center; /* Center text on mobile */
+        padding: 10px 0;
+    }
+}
