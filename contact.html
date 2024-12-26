@@ -1,63 +1,72 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Contact Me</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
 
-    <link rel="stylesheet" href="styles.css">
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+</style>
 </head>
-
 <body>
-
     <nav>
-
         <div class="logo">My Website</div>
-
         <ul>
-
             <li><a href="index.html">Home</a></li>
-
             <li><a href="about.html">About</a></li>
-
             <li><a href="portfolio.html">Portfolio</a></li>
-
             <li><a href="contact.html">Contact</a></li>
-
         </ul>
-
     </nav>
 
-
-
     <div class="content">
-
         <section id="contact">
-
             <h1>Contact Me</h1>
-
             <p>I'd love to hear from you! Feel free to reach out via the following methods:</p>
-
             <ul>
-
                 <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-
                 <li><strong>Phone:</strong> +123 456 7890</li>
-
                 <li><strong>Social Media:</strong> Links to your social profiles.</li>
-
             </ul>
-
         </section>
-
     </div>
-
 </body>
-
 </html>
