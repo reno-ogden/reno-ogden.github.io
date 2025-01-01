@@ -7,9 +7,10 @@
 
 /* Global body styling */
 body {
-    background-color: #8B0000; /* Darker red background for all pages */
+    background-color: #610C04; /* Deep dark red background for all pages */
     color: white; /* White text for contrast */
     font-family: Arial, sans-serif; /* Clean font */
+    margin: 1in; /* Add a 1-inch margin around the edges */
 }
 
 /* Navbar styling */
@@ -18,11 +19,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #8B0000; /* Match navbar color with background */
+    background-color: #610C04; /* Match navbar color with background */
     position: sticky; /* Sticks to the top when scrolling */
     top: 0;
     z-index: 1000;
-    width: 100%;
+    width: calc(100% - 2in); /* Account for 1-inch margin on both sides */
 }
 
 /* Logo styling */
@@ -40,15 +41,8 @@ nav .logo img:hover {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px; /* Add space between links */
-}
-
-nav .left-links {
-    margin-right: auto; /* Push left links to the far left */
-}
-
-nav .right-links {
-    margin-left: auto; /* Push right links to the far right */
+    flex: 1; /* Make both sides of the navbar take up equal space */
+    justify-content: space-around; /* Evenly space out the links */
 }
 
 /* Navigation links */
@@ -73,6 +67,10 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        margin: 0.5in; /* Reduce margin on smaller screens */
+    }
+
     nav {
         flex-wrap: wrap;
         justify-content: center;
