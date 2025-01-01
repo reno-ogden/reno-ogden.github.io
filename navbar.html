@@ -1,100 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation Bar With Dropdown</title>
-    <link rel="stylesheet"
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header class="header">
-        <a href="/" class="brand-logo-a-tag"><img
-           src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
-           alt="Brand logo"> 
-              <span class="brand-logo-name">
-                  GFG
-              </span>
-          </a>
-
-        <nav class="navbar">
-            <ul class="navbar-lists" id="myTopnav">
-                <li><i class="fas fa-home"></i><a class="navbar-link home-link"
-                        href="#">Home</a></li>
-                <li><i class="fas fa-user"></i><a class="navbar-link about-link"
-                        href="#about-us-section">About Us</a>
-                </li>
-                <li><i class="fas fa-envelope"></i><a
-                        class="navbar-link contact-link"
-                        href="#contact-form">Contact
-                        Us</a></li>
-                <li> <i class="fas fa-newspaper"></i> <a
-                        class="navbar-link contact-link"
-                        href="#Your-articles">Your
-                        Articles</a></li>
-            </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-    </header>
-
-
-    <main>
-        <section id="about-us-section">
-            <div class="about-us-container">
-                <h2 class="aboutus-heading">About Us</h2>
-                <p>
-                    <strong class="subheading"> Company Profile and Brand:
-                    </strong>
-
-                    GeeksforGeeks is a leading platform that provides computer
-                    science resources and coding challenges
-                    for programmers and technology enthusiasts, 
-                      along with interview and exam preparations for upcoming
-                    aspirants. With a strong emphasis on enhancing coding 
-                      skills and knowledge, it has become a trusted destination
-                    for over 12 million plus registered users worldwide. 
-                      The platform offers a vast collection of tutorials,
-                    practice problems, interview tutorials, articles, and courses,
-                    covering various domains of computer science.
-
-                    Our exceptional mentors hailing from top colleges &
-                    organizations have the ability to guide you on a
-                    journey
-                    from the humble beginnings of coding to the pinnacle of
-                    expertise. Under their guidance watch your
-                    skills
-                    flourish as we lay the foundation and help you conquer the
-                    world of coding.
-
-                    Our brand is built on the pillars of expertise,
-                    accessibility, and community. We strive to empower
-                    individuals
-                    to enhance their programming skills, to bridge the gap
-                    between academia and industry, and provide a
-                    supportive
-                    community to the learners. GeeksforGeeks is committed to
-                    promoting technological advancement and
-                    providing
-                    opportunities for growth in the ever-evolving field of
-                    computer science.
-                </p>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Responsive Top Navigation Menu with CSS and
-                JavaScript . All rights reserved.</p>
-        </footer>
-
-        <script src="script.js"></script>
-
-</body>
-
-</html>
+<nav>
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="My Website Logo">
+    </a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+</nav>
