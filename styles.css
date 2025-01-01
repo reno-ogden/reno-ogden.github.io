@@ -2,12 +2,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Consistent sizing for all elements */
+    box-sizing: border-box;
 }
 
 /* Global body styling */
 body {
-    background-color: crimson; /* Crimson red background for all pages */
+    background-color: #8B0000; /* Darker red background for all pages */
     color: white; /* White text for contrast */
     font-family: Arial, sans-serif; /* Clean font */
 }
@@ -15,10 +15,10 @@ body {
 /* Navbar styling */
 nav {
     display: flex;
-    justify-content: space-between; /* Space between the logo and nav links */
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
-    background-color: crimson; /* Same color as the page background */
+    background-color: #8B0000; /* Match navbar color with background */
     position: sticky; /* Sticks to the top when scrolling */
     top: 0;
     z-index: 1000;
@@ -27,7 +27,7 @@ nav {
 
 /* Logo styling */
 nav .logo img {
-    height: 40px; /* Adjust based on your logo size */
+    height: 80px; /* Larger logo height */
     cursor: pointer; /* Interactive feel */
     transition: transform 0.3s ease-in-out; /* Animation for hover */
 }
@@ -36,13 +36,22 @@ nav .logo img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Navigation menu */
+/* Left and right link groups */
 nav ul {
     display: flex;
-    list-style: none; /* Remove bullets */
+    list-style: none;
     gap: 20px; /* Add space between links */
 }
 
+nav .left-links {
+    margin-right: auto; /* Push left links to the far left */
+}
+
+nav .right-links {
+    margin-left: auto; /* Push right links to the far right */
+}
+
+/* Navigation links */
 nav ul li {
     position: relative;
 }
@@ -64,37 +73,21 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack links vertically */
-        background-color: crimson; /* Keep dropdown background the same */
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Adjust based on navbar height */
-        left: 0;
-        display: none; /* Initially hidden */
-        padding: 10px 0;
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    nav ul.active {
-        display: flex; /* Show menu when active */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        text-align: center; /* Center-align links */
+        margin: 10px 0; /* Space out links */
     }
-}
 
-/* Mobile menu toggle */
-.menu-toggle {
-    display: none; /* Hidden by default */
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: white; /* White toggle icon */
-}
-
-/* Show toggle icon on smaller screens */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
+    nav .logo img {
+        height: 60px; /* Adjust logo size for smaller screens */
     }
 }
