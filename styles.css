@@ -10,7 +10,7 @@ body {
     background-color: #610C04; /* Deep dark red background for all pages */
     color: white; /* White text for contrast */
     font-family: Arial, sans-serif; /* Clean font */
-    margin: 1in; /* Add a 1-inch margin around the edges */
+    margin: 0.5in; /* 1/2 inch margin around the edges */
 }
 
 /* Navbar styling */
@@ -23,7 +23,9 @@ nav {
     position: sticky; /* Sticks to the top when scrolling */
     top: 0;
     z-index: 1000;
-    width: calc(100% - 2in); /* Account for 1-inch margin on both sides */
+    width: calc(100% - 1in); /* Account for 1/2 inch margin on both sides */
+    margin-left: auto;
+    margin-right: auto; /* Center the navbar */
 }
 
 /* Logo styling */
@@ -41,8 +43,9 @@ nav .logo img:hover {
 nav ul {
     display: flex;
     list-style: none;
-    flex: 1; /* Make both sides of the navbar take up equal space */
-    justify-content: space-around; /* Evenly space out the links */
+    gap: 30px; /* Add space between links */
+    flex-grow: 1; /* Allow links to grow and distribute evenly */
+    justify-content: center; /* Center the links evenly around the logo */
 }
 
 /* Navigation links */
@@ -68,7 +71,7 @@ nav ul li a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        margin: 0.5in; /* Reduce margin on smaller screens */
+        margin: 0.5in; /* Maintain the 1/2-inch margin on smaller screens */
     }
 
     nav {
@@ -82,7 +85,7 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        margin: 10px 0; /* Space out links */
+        margin: 10px 0; /* Space out links vertically */
     }
 
     nav .logo img {
